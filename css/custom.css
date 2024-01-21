@@ -1,0 +1,177 @@
+/*
+ .clean-block{
+    padding-top: 100px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.clean-block .block-heading h1,
+.clean-block .block-heading h2,
+.clean-block .block-heading h3 {
+    margin-bottom: 1.2rem;
+}
+
+.clean-block .block-heading p {
+    text-align: center;
+    max-width: 420px;
+    margin: auto;
+    opacity: .7;
+    margin-bottom: 50px;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.text-info {
+    color: #3b99e0 !important;
+} */
+
+
+
+
+/* Start Color Change To Brown */
+
+
+.text-primary{
+    color: #ee2327 !important;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #ee2327;
+    border-color: #ee2327;
+}
+
+.sidenav-light .sidenav-menu .nav-link:hover {
+    color: #ee2327;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #a1887f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a1887f;
+    text-decoration: underline;
+}
+
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ee2327;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+a {
+    color: #ee2327;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #bcaaa4;
+    border-color: #a1887f;
+}
+
+
+.bg-primary {
+    background-color: #ee2327 !important;
+}
+
+.form-check-input:checked {
+    background-color: #ee2327;
+    border-color: #ee2327;
+}
+
+
+.icons-org-create .icon-plus {
+    color: #ee2327;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -0.5rem;
+    right: -0.75rem;
+}
+
+.icons-org-create .icon-users circle,
+.icons-org-create .icon-users path:first-of-type {
+    color: #ee2327;
+}
+
+.icons-org-create .icon-users path {
+    color: rgba(141, 110, 99, 0.35);
+}
+
+.card:not([class*="bg-"]) .card-header {
+    color: #ee2327;
+}
+
+.border-start-primary {
+    border-left-color: #ee2327 !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #bf360c;
+    border-color: #bf360c;
+}
+
+.text-secondary {
+    color: #bf360c !important;
+}
+
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: #bf360c !important;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #962a0a;
+    border-color: #962a0a;
+}
+
+.icons-org-join .icon-user {
+    height: 4rem;
+    width: 4rem;
+    color: #bf360c;
+}
+
+.icons-org-join .icon-arrow {
+    font-size: 2rem;
+    margin: 1rem 0.5rem 1rem 0;
+    color: #bf360c;
+}
+
+
+.icons-org-join .icon-users circle,
+.icons-org-join .icon-users path:first-of-type {
+    color: rgba(191, 54, 12, 0.5);
+}
+
+.icons-org-join .icon-users path {
+    color: rgba(191, 54, 12, 0.5);
+}
+.bg-gradient-primary-to-secondary {
+    background-color: #ee2327 !important;
+    background-image: linear-gradient(135deg, #ee2327 0%, rgba(191, 54, 12, 0.8) 100%) !important;
+} 
+
+.overlay-primary{
+    background-color: #ee2327;
+}
+
+/* End Color Change To Brown */
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    width: 100%;
+    max-height: 210px;
+}
