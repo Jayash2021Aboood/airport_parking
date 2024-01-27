@@ -288,13 +288,13 @@
                             </div>
                             <?php echo lang("Dashboard");?>
                         </a>
-                        <a class="nav-link" href="<?php echo $mainPage; ?>my_issues.php">
-                            <div class="nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
-                            <?PHP echo lang("My Issues");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $mainPage; ?>my_fines.php">
+                        <a class="nav-link" href="<?php echo $mainPage; ?>booking/create.php">
                             <div class="nav-link-icon"><i class="fa-solid fa-coins"></i></div>
-                            <?PHP echo lang("My Fines");?>
+                            <?PHP echo lang("Add Booking");?>
+                        </a>
+                        <a class="nav-link" href="<?php echo $mainPage; ?>booking/">
+                            <div class="nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                            <?PHP echo lang("My Bookings");?>
                         </a>
                         <?php } ?>
 
