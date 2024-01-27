@@ -180,13 +180,13 @@
                                 <!-- Form Group (from_date)-->
                                 <div class="col-md-4 mb-3">
                                     <label class="small mb-1" for="from_date"><?php echo lang("FromDate"); ?></label>
-                                    <input class="form-control" id="from_date" name="from_date" type="Date" placeholder="<?php echo lang("FromDate"); ?>"
+                                    <input class="form-control" id="from_date" name="from_date" type="datetime-local" placeholder="<?php echo lang("FromDate"); ?>"
                                         value="<?php echo $from_date;?>" required />
                                 </div>
                                 <!-- Form Group (to_date)-->
                                 <div class="col-md-4 mb-3">
                                     <label class="small mb-1" for="to_date"><?php echo lang("ToDate"); ?></label>
-                                    <input class="form-control" id="to_date" name="to_date" type="Date" placeholder="<?php echo lang("ToDate"); ?>"
+                                    <input class="form-control" id="to_date" name="to_date" type="datetime-local" placeholder="<?php echo lang("ToDate"); ?>"
                                         value="<?php echo $to_date;?>" required />
                                 </div>
                                 <!-- Form Group (amount)-->
