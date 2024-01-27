@@ -226,55 +226,10 @@
                             </div>
                             <?php echo lang("Home");?>
                         </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_AUTHOR; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-feather"></i></div>
-                            <?php echo lang("Author");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_BOOK; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-book"></i></div>
-                            <?php echo lang("Books");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_COLLEGE; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-building-columns"></i></div>
-                            <?php echo lang("Colleges");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_DEPARTMENT; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-building"></i></div>
-                            <?php echo lang("Departments");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_FINE; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-coins"></i></div>
-                            <?php echo lang("Fines");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_ISSUE; ?>">
+                        <a class="nav-link" href="<?php echo $mainPage; ?>booking/">
                             <div class="nav-link-icon"><i class="fa-solid fa-calendar-days"></i></div>
-                            <?php echo lang("Issues");?>
+                            <?PHP echo lang("Bookings");?>
                         </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_LANGUAGE; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-language"></i></div>
-                            <?php echo lang("Languages");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_LEVEL; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-layer-group"></i></div>
-                            <?php echo lang("Levels");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_PUBLISHER; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
-                            <?php echo lang("Publishers");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_SECTION; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-list-ul"></i></div>
-                            <?php echo lang("Section");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_SETTING; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-sliders"></i></div>
-                            <?php echo lang("Setting");?>
-                        </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_CUSTOMER; ?>">
-                            <div class="nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                            <?php echo lang("Customers");?>
-                        </a>
-
                         <!-- ============================================================  -->
                         <!-- ==============   Customer Pages Link      ==================  -->
                         <!-- ============================================================  -->
