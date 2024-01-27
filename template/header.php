@@ -16,7 +16,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="<?php echo $PATH_SERVER ?>css/custom.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="<?php echo $PATH_SERVER ?>assets/img/favicon.png" />
+    <!-- <link rel="icon" type="image/x-icon" href="<?php //echo $PATH_SERVER; ?>assets/img/favicon.png" /> -->
     <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
 
     <?php if(getCurrentLanguage() == "ar"){ ?>
