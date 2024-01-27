@@ -22,7 +22,7 @@
 	$PATH_ATTACHMENTS 		= $PATH_SERVER . 'attachments/';
 
 	$PATH_ADMIN 			= $PATH_SERVER . 'admin/';
-	// $PATH_CUSTOMER 			= $PATH_SERVER . 'customer/';
+	$PATH_CUSTOMER 			= $PATH_SERVER . 'customer/';
 	$PATH_EMPLOYEE 			= $PATH_SERVER . 'employee/';
 
 	
