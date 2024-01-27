@@ -13,8 +13,8 @@
                 $mainPage = $PATH_ADMIN;
             if(isEmployee())
                 $mainPage = $PATH_EMPLOYEE;
-            if(isStudent())
-                $mainPage = $PATH_STUDENT
+            if(isCustomer())
+                $mainPage = $PATH_CUSTOMER
 ;
          ?>
         <div class="avatar avatar-lg">
@@ -270,20 +270,20 @@
                             <div class="nav-link-icon"><i class="fa-solid fa-sliders"></i></div>
                             <?php echo lang("Setting");?>
                         </a>
-                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_STUDENT; ?>">
+                        <a class="nav-link" href="<?php echo $PATH_EMPLOYEE_CUSTOMER; ?>">
                             <div class="nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                            <?php echo lang("Students");?>
+                            <?php echo lang("Customers");?>
                         </a>
 
                         <!-- ============================================================  -->
                         <!-- ==============   Customer Pages Link      ==================  -->
                         <!-- ============================================================  -->
 
-                        <?php }else if(isStudent()){ ?>
+                        <?php }else if(isCustomer()){ ?>
 
                         <div class="sidenav-menu-heading"><?php echo lang("Control Panel");?></div>
 
-                        <a class="nav-link" href="<?php echo $PATH_STUDENT;?>index.php">
+                        <a class="nav-link" href="<?php echo $PATH_CUSTOMER;?>index.php">
                             <div class="nav-link-icon"><i class="fa fa-home fa-lg"></i>
                             </div>
                             <?php echo lang("Dashboard");?>

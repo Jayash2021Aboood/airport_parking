@@ -17,9 +17,9 @@ if (isset($_SESSION['user']))
             header('Location: employee/index.php');
             exit();
         }
-        else if($_SESSION['userType'] == 's')
+        else if($_SESSION['userType'] == 'c')
         {
-            header('Location: student/index.php');
+            header('Location: customer/index.php');
             exit();
         }
     }
@@ -119,23 +119,23 @@ if (isset($_SESSION['user']))
                 $errors[] = lang("No Employee found with this data");
             }
         }
-        else if($userType == 's')
+        else if($userType == 'c')
         {
-            $students = select("select * from student where email like '$email' and password like '$password';");
-            if(count($students) > 0)
+            $customers = select("select * from customer where email like '$email' and password like '$password';");
+            if(count($customers) > 0)
             {
-                    $_SESSION["userID"] = $students[0]['id'];
+                    $_SESSION["userID"] = $customers[0]['id'];
                     $_SESSION["user"] = $email;
-                    $_SESSION["userType"] = 's';
-                    $_SESSION['success'] = lang("Welcome ") . $students[0]['name'] ;
-                    header('Location: student/index.php');
+                    $_SESSION["userType"] = 'c';
+                    $_SESSION['success'] = lang("Welcome ") . $customers[0]['name'] ;
+                    header('Location: customer/index.php');
                     exit();
             }
             else
             {
-                $_SESSION["message"] = lang("No Student found with this data");
-                $_SESSION["fail"] = lang("No Student found with this data");
-                $errors[] = lang("No Student found with this data");
+                $_SESSION["message"] = lang("No Customer found with this data");
+                $_SESSION["fail"] = lang("No Customer found with this data");
+                $errors[] = lang("No Customer found with this data");
             }
         }
         else

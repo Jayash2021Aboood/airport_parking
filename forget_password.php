@@ -19,7 +19,7 @@ if (isset($_SESSION['user']))
             header('Location: employee/index.php');
             exit();
         }
-        else if($_SESSION['userType'] == 's')
+        else if($_SESSION['userType'] == 'c')
         {
             header('Location: student/index.php');
             exit();
@@ -79,7 +79,7 @@ if (isset($_SESSION['user']))
                 $errors[] = lang("user not found");
             }
         }
-        else if($userType == 's')
+        else if($userType == 'c')
         {
             $students = select("select * from student where email like '$email';");
             if(count($students) > 0)

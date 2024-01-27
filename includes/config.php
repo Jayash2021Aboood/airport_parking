@@ -111,7 +111,7 @@
 			}
   }
 
-  function checkStudentSession($path = "http://localhost/airport_parking/" , $page = "login.php")
+  function checkCustomerSession($path = "http://localhost/airport_parking/" , $page = "login.php")
   {
             if (!isset($_SESSION['user']))
             {
@@ -121,7 +121,7 @@
 			{
 				header('Location:'. $path . $page);
 			} 
-			if($_SESSION['userType'] != 's')
+			if($_SESSION['userType'] != 'c')
 			{
 				header('Location:'. $path . $page);
 			}
@@ -133,7 +133,7 @@
 	{
 		if(isset($_SESSION['userType']))
 		{
-			if($_SESSION['userType'] == 'a' || $_SESSION['userType'] == 's' || $_SESSION['userType'] == 'e')
+			if($_SESSION['userType'] == 'a' || $_SESSION['userType'] == 'c' || $_SESSION['userType'] == 'e')
 			{
 				return true;
 			}
@@ -158,7 +158,7 @@
 //   function isEngineer() { if(getLoginType() == 'e') return true; }
   function isEmployee() { if(getLoginType() == 'e') return true; }
 //   function isCustomer() { if(getLoginType() == 'c') return true; }
-  function isStudent() { if(getLoginType() == 's') return true; }
+  function isCustomer() { if(getLoginType() == 'c') return true; }
   function getLoginEmail() { return $_SESSION['user'] ;}
 
 //   function checkAdminSession($path = "http://localhost/airport_parking/" , $page = "login.php")
