@@ -219,6 +219,11 @@
 "Employee Login" : "سجل دخول كموظف",
 "Admin Login" : "سجل دخول كمدير",
 "Dont Have Account" : "ليس لديك حساب",
-"Register" : "انشاء حساب"
+"Register" : "انشاء حساب",
+"Payment" : "الدفع",
+"Employee List" : "قائمة الموظفين",
+"Edit Booking" : "تعديل الحجز",
+"Register As Customer" : "انشاء حساب عميل"
+
 
 }
