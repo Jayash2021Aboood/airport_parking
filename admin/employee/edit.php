@@ -179,7 +179,7 @@
                                 <div class="col-md-4 mb-3">
                                     <label class="small mb-1" for="email"><?php echo lang("Email"); ?></label>
                                     <input class="form-control" id="email" name="email" type="email" placeholder="<?php echo lang("Email"); ?>"
-                                        value="<?php echo $email;?>" required />
+                                        value="<?php echo $email;?>" required readonly />
                                 </div>
                                 <!-- Form Group (password)-->
                                 <div class="col-md-4 mb-3">
