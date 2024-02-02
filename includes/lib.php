@@ -164,7 +164,7 @@ function AddNewCustomer($name, $phone, $email, $password, $department_id, $level
     
 }
 
-function AddNewEmployee( $name, $phone, $email, $password, $address)
+function AddNewEmployee($name, $date_of_birth, $salary, $phone, $email, $password,)
 {
     $isExsist = isUserExist($email);
     if($isExsist == true){
@@ -184,10 +184,10 @@ function AddNewEmployee( $name, $phone, $email, $password, $address)
 
     $servername = $localhost;
     $username = $DBusername;
-    $password = $pwd;
+    $pass = $pwd;
     $dbname = $dbname;
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $pass, $dbname);
 
     // Check connection
     if ($conn->connect_error) {
@@ -199,7 +199,7 @@ function AddNewEmployee( $name, $phone, $email, $password, $address)
 
     try {
         // Insert data into the employee table
-        $sql = "INSERT INTO employee VALUES(null,'$name','$phone','$email','$password','$address')";
+        $sql = "INSERT INTO employee VALUES(null,'$name', '$date_of_birth', $salary, '$phone','$email','$password')";
         if ($conn->query($sql)!== TRUE) {
             throw new Exception("Error inserting data into employee table: ". $conn->error);
         }
