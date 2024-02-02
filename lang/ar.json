@@ -214,5 +214,11 @@
 "Park Details" : "تفاصيل الموقف",
 "Park Added successfuly!" : "تم اضافة الموقف بنجاح",
 "Booking Added successfuly!" : "تم اضافة الحجز بنجاح",
-"My Bookings" : "حجوزاتي"   
+"My Bookings" : "حجوزاتي",
+"Customer Login" : "سجل دخول كعميل",
+"Employee Login" : "سجل دخول كموظف",
+"Admin Login" : "سجل دخول كمدير",
+"Dont Have Account" : "ليس لديك حساب",
+"Register" : "انشاء حساب"
+
 }
