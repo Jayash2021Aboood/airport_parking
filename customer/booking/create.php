@@ -123,7 +123,14 @@
             <div class="col-xl-12">
                 <!-- Booking details card-->
                 <div class="card mb-4">
-                    <div class="card-header"><?php echo lang("Booking Details"); ?></div>
+                    <div class="card-header">
+                        <?php echo lang("Booking Details"); ?> 
+                        <h4>
+                            <?php echo lang("Amount Per Hour"); ?> 
+                            <?php echo $setting[0]['amount_per_hour']; ?> 
+
+                        </h4>
+                    </div>
                     <div class="card-body">
                         <form action="" method="POST" enctype="multipart/form-data">
                             <!-- Form Row-->
