@@ -272,7 +272,15 @@
                         <?php if(!isLogin()) {?>
                         <a class="nav-link" href="<?php echo $PATH_SERVER; ?>login.php">
                             <div class="nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
-                            <?php echo lang("Login");?>
+                            <?php echo lang("Customer Login");?>
+                        </a>
+                        <a class="nav-link" href="<?php echo $PATH_SERVER; ?>login.php">
+                            <div class="nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                            <?php echo lang("Employee Login");?>
+                        </a>
+                        <a class="nav-link" href="<?php echo $PATH_SERVER; ?>login.php">
+                            <div class="nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                            <?php echo lang("Admin Login");?>
                         </a>
                         <?php }?>
                         <?php //} ?>
