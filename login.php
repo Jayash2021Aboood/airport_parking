@@ -218,6 +218,8 @@ if (isset($_SESSION['user']))
                             </div>
                             <!-- Form Group (login box)-->
                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <?php echo lang("Dont Have Account"); ?> <a class="small" href="customerSignin.php"><?php echo lang("Register"); ?></a>
+                            <br/>
                                 <a class="small" href="forget_password.php"><?php echo lang("Forgot Password?"); ?></a>
                                 <button class="btn btn-primary" name="login"
                                     type="submit"><?php echo lang("Login"); ?></button>
