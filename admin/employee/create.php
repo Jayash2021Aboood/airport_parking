@@ -56,27 +56,36 @@
   
       if(count($errors) == 0)
       {
-        $add = addEmployee(
-                                    $name,
-                                    $date_of_birth,
-                                    $salary,
-                                    $phone,
-                                    $email,
-                                    $password,
-                                    );
-        if($add ==  true)
-        {
-          $_SESSION["message"] = lang("Employee Added successfuly!");
-          $_SESSION["success"] = lang("Employee Added successfuly!");
-          header('Location:'. $PATH_ADMIN_EMPLOYEE .'index.php');
-          exit();
-        }
-        else
-        {
-          $_SESSION["message"] = lang("Error when Adding Data");
-          $_SESSION["fail"] = lang("Error when Adding Data");
-          $errors[] = lang("Error when Adding Data");
-        }
+
+        try{
+
+          $add = AddNewEmployee(
+            $name,
+            $date_of_birth,
+            $salary,
+            $phone,
+            $email,
+            $password,
+            );
+          if($add ==  true)
+          {
+              $_SESSION["message"] = lang("Employee Added successfuly!");
+              $_SESSION["success"] = lang("Employee Added successfuly!");
+              header('Location:'. $PATH_ADMIN_EMPLOYEE .'index.php');
+              exit();
+          }
+          else
+          {
+              $_SESSION["message"] = lang("Error when Adding Data");
+              $_SESSION["fail"] = lang("Error when Adding Data");
+              $errors[] = lang("Error when Adding Data");
+          }
+      }
+      catch(Exception $e){
+          $_SESSION["message"] = $e->getMessage();
+          $_SESSION["fail"] = $e->getMessage();
+          $errors[] = $e->getMessage();
+      }
         
       }
   
